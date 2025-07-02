@@ -11,8 +11,8 @@ This project provides a simple and efficient tool to compress and decompress fil
 - **Compress** any text file using Huffman coding.
 - **Decompress** previously compressed files to their original content.
 - Simple command-line interface for ease of use.
-- Written entirely in Java.
 - Prints compression percentage after successful compression.
+- Written entirely in Java.
 
 ## Getting Started
 
@@ -66,16 +66,16 @@ java -cp out com.bhagavathi.huffman.FileCompressNExtract --extract sample.cmp de
 ## Project Structure
 
 - com.bhagavathi.huffman
- - FileCompressNExtract.java
- - node
-    - HuffmanNode.java
-    - HuffmanNodeComparator.java
- - extraction
-    - FileExtractor.java
-    - ExtractionData.java
- - compression
-    - FileCompressor.java
-    - CompressionData.java
+  - FileCompressNExtract.java
+  - node
+     - HuffmanNode.java
+     - HuffmanNodeComparator.java
+  - extraction
+     - FileExtractor.java
+     - ExtractionData.java
+  - compression
+     - FileCompressor.java
+     - CompressionData.java
 
 ## Contributing
 
