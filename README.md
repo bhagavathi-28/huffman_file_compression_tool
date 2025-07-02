@@ -65,17 +65,17 @@ java -cp out com.bhagavathi.huffman.FileCompressNExtract --extract sample.cmp de
 
 ## Project Structure
 
-com.bhagavathi.huffman
-├── FileCompressNExtract.java
-├── node
-│ ├── HuffmanNode.java
-│ └── HuffmanNodeComparator.java
-├── extraction
-│ ├── FileExtractor.java
-│ └── ExtractionData.java
-└── compression
-├── FileCompressor.java
-└── CompressionData.java
+- com.bhagavathi.huffman
+ - FileCompressNExtract.java
+ - node
+    - HuffmanNode.java
+    - HuffmanNodeComparator.java
+ - extraction
+    - FileExtractor.java
+    - ExtractionData.java
+ - compression
+    - FileCompressor.java
+    - CompressionData.java
 
 ## Contributing
 
