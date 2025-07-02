@@ -12,6 +12,7 @@ This project provides a simple and efficient tool to compress and decompress fil
 - **Decompress** previously compressed files to their original content.
 - Simple command-line interface for ease of use.
 - Written entirely in Java.
+- Prints compression percentage after successful compression.
 
 ## Getting Started
 
@@ -40,7 +41,7 @@ This project provides a simple and efficient tool to compress and decompress fil
 #### Compress a File
 
 ```sh
-java Main compress <input_file> <output_file>
+java -cp out com.bhagavathi.huffman.FileCompressNExtract --compress <input_file> <output_file>
 ```
 
 - `<input_file>`: Path to the file you want to compress.
@@ -49,25 +50,32 @@ java Main compress <input_file> <output_file>
 #### Decompress a File
 
 ```sh
-java Main decompress <compressed_file> <output_file>
+java -cp out com.bhagavathi.huffman.FileCompressNExtract --extract <compressed_file> <output_file>
 ```
 
-- `<compressed_file>`: Path to the compressed (.huff) file.
+- `<compressed_file>`: Path to the compressed (.cmp) file.
 - `<output_file>`: Path where the decompressed file will be saved.
 
 #### Example
 
 ```sh
-java Main compress sample.txt sample.huff
-java Main decompress sample.huff decompressed_sample.txt
+java -cp out com.bhagavathi.huffman.FileCompressNExtract --compress sample.txt sample.cmp
+java -cp out com.bhagavathi.huffman.FileCompressNExtract --extract sample.cmp decompressed_sample.txt
 ```
 
 ## Project Structure
 
-- `Main.java`: Entry point and command-line interface.
-- `HuffmanCompressor.java`: Compression logic.
-- `HuffmanDecompressor.java`: Decompression logic.
-- Other helper classes for encoding/decoding and file operations.
+com.bhagavathi.huffman
+├── FileCompressNExtract.java
+├── node
+│ ├── HuffmanNode.java
+│ └── HuffmanNodeComparator.java
+├── extraction
+│ ├── FileExtractor.java
+│ └── ExtractionData.java
+└── compression
+├── FileCompressor.java
+└── CompressionData.java
 
 ## Contributing
 
