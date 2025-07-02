@@ -32,7 +32,7 @@ This project provides a simple and efficient tool to compress and decompress fil
    ```
 3. **Compile the Java files:**
    ```sh
-   javac *.java
+   javac -d out com/bhagavathi/huffman/*.java
    ```
 
 ### Usage
